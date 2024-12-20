@@ -8,62 +8,57 @@
 </head>
 <body>
     <header>
-        <h1>Kota Purworejo</h1>
-        <p>Kota penuh sejarah dan keindahan di Jawa Tengah</p>
+        <div class="title">Kota Purworejo</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sejarah">Sejarah</a></li>
-                <li><a href="#tempat-wisata">Tempat Wisata</a></li>
-                <li><a href="#budaya">Budaya</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="#wisata">Wisata</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="#wisata">Wisata</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
     </header>
-    <main>
-        <section id="home">
-            <h2>Selamat Datang</h2>
-            <p>Purworejo adalah sebuah kabupaten di Jawa Tengah yang kaya akan budaya, sejarah, dan keindahan alam.</p>
+    <main class="content">
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Selamat Datang di Purworejo</h1>
+                <p>Purwa diambil dari bahasa Sanskerta yang berarti awal, dan Rejo berarti makmur. Kota ini dikenal sebagai salah satu kota tertua di Jawa Tengah yang kaya akan budaya, alam, dan sejarah.</p>
+            </div>
         </section>
-
         <section id="sejarah">
-            <h2>Sejarah</h2>
-            <p>Kabupaten Purworejo didirikan pada tahun 1830. Nama "Purworejo" berasal dari kata "Purwo" yang berarti awal dan "Rejo" yang berarti ramai atau makmur.</p>
+            <h2>Sejarah Purworejo</h2>
+            <p>Kota Purworejo memiliki sejarah panjang yang dimulai pada abad ke-9. Kota ini menjadi saksi berdirinya berbagai peradaban di Pulau Jawa.</p>
         </section>
-
-        <section id="tempat-wisata">
-            <h2>Tempat Wisata</h2>
+        <section id="wisata">
+            <h2>Wisata di Purworejo</h2>
             <ul>
-                <li>Alun-Alun Purworejo</li>
                 <li>Pantai Jatimalang</li>
                 <li>Curug Muncar</li>
-                <li>Bukit Geger Menjangan</li>
+                <li>Goa Seplawan</li>
+                <li>Masjid Agung Purworejo</li>
             </ul>
         </section>
-
-        <section id="budaya">
-            <h2>Budaya</h2>
-            <p>Kota ini terkenal dengan kesenian Tari Dolalak, tradisi unik yang melibatkan gerakan dinamis dan musik khas.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Website ini dibuat untuk memperkenalkan keindahan dan kekayaan budaya Kabupaten Purworejo kepada masyarakat luas.</p>
-        </section>
-
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Untuk informasi lebih lanjut, silakan hubungi kami melalui:</p>
-            <ul>
-                <li>Email: info@purworejo.com</li>
-                <li>Telepon: 0812-3456-7890</li>
-            </ul>
+            <h2>Kontak</h2>
+            <p>Email: info@purworejo.com</p>
+            <p>Telepon: +62 123 456 789</p>
+        </section>
+        <section id="about">
+            <h2>Tentang Kota Purworejo</h2>
+            <p>Kota Purworejo adalah kota kecil yang kaya akan budaya, alam, dan sejarah. Dengan penduduk yang ramah, Purworejo adalah tempat yang cocok untuk berwisata dan belajar.</p>
         </section>
     </main>
-    <footer>
-        <p>© 2024 Informasi Kota Purworejo. All Rights Reserved.</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>

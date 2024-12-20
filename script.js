@@ -1,3 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    alert('Selamat datang di website Kota Purworejo!');
-});
+function toggleMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+}
