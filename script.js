@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-    alert('Selamat datang di informasi tentang Kota Purworejo!');
+    alert('Selamat datang di website Kota Purworejo!');
 });
