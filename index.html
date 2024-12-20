@@ -1,110 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesan Tiket Online</title>
+    <title>Kota Purworejo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-container">
-            <p>BintangEnamDua.Trip</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Staycation di Bandung">
-                <button>Search</button>
-            </div>
-            <div class="header-links">
-                <a href="#">Jadi Partner</a>
-                <a href="#">BED Tiket Rewards</a>
-                <a href="#">Cek Pesanan</a>
-                <button class="login-btn">Masuk</button>
-                <button class="register-btn">Daftar</button>
-            </div>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Pesawat</a></li>
-                <li><a href="#">Hotel</a></li>
-                <li><a href="#">Villa & Apt.</a></li>
-                <li><a href="#">To Do</a></li>
-                <li><a href="#">Kereta</a></li>
-                <li><a href="#">Lainnya</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1>Selamat Datang di Kota Purworejo</h1>
+        <p>Kota penuh sejarah dan keindahan di Jawa Tengah</p>
     </header>
-
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Ciptakan kenangan indah di seluruh dunia</h1>
-            <p>Cek harga spesial ke berbagai destinasi dan nikmati liburan tak terlupakan!</p>
-        </div>
-    </section>
-
     <main>
-        <section class="promo-tickets">
-            <h2>Promo Tiket Pesawat</h2>
-            <div class="ticket-container">
-                <div class="ticket-card">
-                    <a href="#modal-Bali" onclick="openModal('Bali', 'Diskon hingga 50%!')">
-                        <img src="pura.png" alt="Bali">
-                    </a>
-                    <div class="ticket-info">
-                        <h3>Bali</h3>
-                        <p>Diskon hingga 50%!</p>
-                    </div>
-                </div>
-
-                <div class="ticket-card">
-                    <a href="jakarta.html" onclick="openModal('Jakarta', 'Hemat Rp 200.000!')">
-                        <img src="monas1.png" alt="Jakarta">
-                    </a>
-                    <div class="ticket-info">
-                        <h3>Jakarta</h3>
-                        <p>Hemat Rp 200.000!</p>
-                    </div>
-                </div>
-
-                <div class="ticket-card">
-                    <a href="#modal-Yogyakarta" onclick="openModal('Yogyakarta', 'Diskon spesial 30%!')">
-                        <img src="Tugu-Jogja.jpg" alt="Yogyakarta">
-                    </a>
-                    <div class="ticket-info">
-                        <h3>Yogyakarta</h3>
-                        <p>Diskon spesial 30%!</p>
-                    </div>
-                </div>
+        <section id="introduction">
+            <h2>Tentang Purworejo</h2>
+            <p>Purwa adalah sebuah kabupaten di Jawa Tengah yang terkenal dengan budaya, tempat wisata, dan makanan khasnya.</p>
+        </section>
+        <section id="places">
+            <h2>Tempat Wisata</h2>
+            <ul>
+                <li>Alun-Alun Purworejo</li>
+                <li>Pantai Jatimalang</li>
+                <li>Curug Muncar</li>
+                <li>Bukit Geger Menjangan</li>
+            </ul>
+        </section>
+        <section id="culture">
+            <h2>Budaya dan Kesenian</h2>
+            <p>Purworejo dikenal dengan Tari Dolalak, kesenian tradisional yang memukau.</p>
+        </section>
+        <section id="gallery">
+            <h2>Galeri</h2>
+            <div id="gallery-container">
+                <img src="images/pantai.jpg" alt="Pantai Jatimalang">
+                <img src="images/curug.jpg" alt="Curug Muncar">
             </div>
         </section>
     </main>
-
-    <!-- Modal for ticket booking -->
-    <div id="modal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">X</span>
-            <h2 id="destination-modal"></h2>
-            <p id="promo-details"></p>
-            <form id="booking-form">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" placeholder="Masukkan Nama">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Masukkan Email">
-
-                <label for="payment-method">Metode Pembayaran:</label>
-                <select id="payment-method">
-                    <option value="credit-card">Kartu Kredit</option>
-                    <option value="bank-transfer">Transfer Bank</option>
-                    <option value="e-wallet">E-Wallet</option>
-                </select>
-                
-                <button type="button" onclick="confirmOrder()">Konfirmasi Pemesanan</button>
-            </form>
-        </div>
-    </div>
-
     <footer>
-        <p>&copy; 2024 BintangEnamDua.Trip</p>
+        <p>© 2024 Informasi Kota Purworejo</p>
     </footer>
     <script src="script.js"></script>
 </body>
